@@ -9,10 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/slick_slick.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-        crossorigin="anonymous"></script>
     <style>
         header {
             position: absolute;
@@ -54,19 +52,15 @@
             height: 100vh;
             overflow: hidden;
         }
-        /* .slider-item{
+
+        .carousel .slider-item{
             height: 100vh;
             overflow: hidden;
         }
-        .slider-text {
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            top: 0;
-            margin: auto;
-            display: inline-block;
-        } */
+        .carousel .slider-item img{
+            width: 100%;
+        }
+       
     </style>
 </head>
 
@@ -91,15 +85,37 @@
                 </div>
             </nav>
         </header>
-        <div class="carousel">
+        <div id="carousel" class="carousel">
             <div class="slider-item">
                 <img class="img-fluid" src="images/52.jpg" />
+            </div>
+            <div class="slider-item">
+                <img class="img-fluid" src="images/l5etgltrmub41.jpg" />
             </div>
         </div>
     </div>
     <div style="height:600px"></div>
     <!-- Slider -->
-    <script>
+
+    <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick_slick.min.js"></script>
+
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> -->
+
+    <script type="text/javascript">
+       jQuery(document).on('ready', function() {
+            jQuery('#carousel').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+            });
+        });
+
+
         document.addEventListener("DOMContentLoaded", function () {
             window.addEventListener('scroll', function () {
                 if (window.scrollY > 50) {
