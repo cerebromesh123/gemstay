@@ -1,0 +1,67 @@
+/*
+Theme Name: Gemstay
+Theme URI: https://example.tk
+Author: Riaz Ali Shah
+Author URI: https://example.tk
+Description: This is my custom theme
+Version: 1.0
+*/
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.navbar a {
+    color: #000000;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.navbar-brand img {
+    height: 80px;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    transition: height 0.3s;
+}
+
+.fixed-top img {
+    height: 55px;
+}
+
+.fixed-top {
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    transition: background-color 1s;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px #cbcbcb;
+}
+
+.carousel {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.carousel .img{
+    width: 100%;
+}
+.carousel .slick-slide{
+    width: 100%;
+}
+/* .slider-item{
+    height: 100vh;
+    overflow: hidden;
+}
+.slider-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    display: inline-block;
+} */
